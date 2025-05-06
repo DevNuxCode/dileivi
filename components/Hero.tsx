@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "lucide-react";
 
@@ -22,15 +21,6 @@ export function Hero() {
 
       <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
         <div className="max-w-3xl mx-auto space-y-6">
-          <div className="flex justify-center mb-6">
-            <Image
-              src="/logo100.png"
-              alt="Dileivi Bello Studio Logo"
-              width={100}
-              height={100}
-              className="w-24 h-24 md:w-32 md:h-32"
-            />
-          </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif text-white tracking-tight">
             <span className="block">Dileivi Bello Studio</span>
             <span className="block text-2xl md:text-3xl lg:text-4xl mt-2 font-normal">Arte en tus manos</span>

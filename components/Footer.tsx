@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import { Scissors } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,13 +11,7 @@ export function Footer() {
           {/* Column 1: Logo and Name */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <Image
-                src="/logo100.png"
-                alt="Dileivi Bello Studio Logo"
-                width={32}
-                height={32}
-                className="w-8 h-8"
-              />
+              <Scissors className="h-6 w-6 text-primary" />
               <span className="font-serif text-xl font-bold">Dileivi Bello Studio</span>
             </div>
             <p className="text-sm text-muted-foreground">
