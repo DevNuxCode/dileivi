@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "nombre": "Carolina Mendez",
+    "testimonio": "Desde que descubrí Dileivi Bello Studio, no he querido ir a ningún otro lugar. La atención es increíble y mis uñas nunca habían lucido tan bien. ¡Totalmente recomendado!",
+    "rating": 5,
+    "fecha": "2023-10-15",
+    "imagen": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg"
+  },
+  {
+    "id": 2,
+    "nombre": "Marcela Rojas",
+    "testimonio": "Los diseños son únicos y personalizados. Siempre salgo feliz de mi cita y recibo muchos cumplidos por mis uñas. El ambiente es muy agradable y profesional.",
+    "rating": 5,
+    "fecha": "2023-11-20",
+    "imagen": "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg"
+  },
+  {
+    "id": 3,
+    "nombre": "Valentina Torres",
+    "testimonio": "Lo que más me gusta es la durabilidad de los trabajos. Mis uñas mantienen el brillo y el diseño intacto por semanas. Además, los productos que utilizan son de primera calidad.",
+    "rating": 4,
+    "fecha": "2023-12-05",
+    "imagen": "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg"
+  },
+  {
+    "id": 4,
+    "nombre": "Daniela Castro",
+    "testimonio": "La puntualidad y la limpieza del estudio son impecables. Me encanta que respeten mi tiempo y que el lugar sea tan acogedor. ¡Los diseños son hermosos!",
+    "rating": 5,
+    "fecha": "2024-01-18",
+    "imagen": "https://images.pexels.com/photos/1102341/pexels-photo-1102341.jpeg"
+  }
+]

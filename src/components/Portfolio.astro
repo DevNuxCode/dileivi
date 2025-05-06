@@ -1,0 +1,93 @@
+---
+// Fetch cliente data
+const response = await fetch('http://localhost:4321/data/clientes.json');
+const portfolioItems = await response.json();
+
+// Categories for filtering
+const categories = [...new Set(portfolioItems.map(item => item.categoria))];
+---
+
+<section id="portafolio" class="section-padding bg-pink-50 dark:bg-gray-800 transition-colors duration-300">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">Nuestro Portafolio</h2>
+      <p class="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+        Descubre nuestros trabajos más destacados y déjate inspirar para tu próxima visita.
+      </p>
+    </div>
+    
+    <!-- Portfolio Filter -->
+    <div class="flex flex-wrap justify-center gap-4 mb-12">
+      <button 
+        class="filter-btn active px-4 py-2 rounded-full bg-primary-500 text-white hover:bg-primary-600 transition-colors"
+        data-category="all"
+      >
+        Todos
+      </button>
+      {categories.map(category => (
+        <button 
+          class="filter-btn px-4 py-2 rounded-full bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+          data-category={category}
+        >
+          {category.charAt(0).toUpperCase() + category.slice(1)}
+        </button>
+      ))}
+    </div>
+    
+    <!-- Portfolio Grid -->
+    <div class="portfolio-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {portfolioItems.map(item => (
+        <div 
+          class="portfolio-item group overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
+          data-category={item.categoria}
+        >
+          <div class="relative overflow-hidden h-64">
+            <img 
+              src={item.imagen} 
+              alt={item.nombre} 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+              <h3 class="text-xl font-bold text-white">{item.nombre}</h3>
+              <p class="text-white/80">{item.descripcion}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  // Portfolio filtering functionality
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const portfolioItems = document.querySelectorAll('.portfolio-item');
+  
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Update active button
+      filterButtons.forEach(btn => btn.classList.remove('active', 'bg-primary-500', 'text-white'));
+      filterButtons.forEach(btn => btn.classList.add('bg-white', 'dark:bg-gray-700', 'text-gray-700', 'dark:text-gray-300'));
+      
+      button.classList.add('active', 'bg-primary-500', 'text-white');
+      button.classList.remove('bg-white', 'dark:bg-gray-700', 'text-gray-700', 'dark:text-gray-300');
+      
+      const category = button.getAttribute('data-category');
+      
+      // Filter items
+      portfolioItems.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+  .filter-btn.active {
+    @apply bg-primary-500 text-white;
+  }
+</style>

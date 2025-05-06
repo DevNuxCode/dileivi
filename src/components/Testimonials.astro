@@ -1,0 +1,84 @@
+---
+// Fetch testimonials data
+const response = await fetch('http://localhost:4321/data/testimonios.json');
+const testimonials = await response.json();
+---
+
+<section id="testimonios" class="section-padding bg-white dark:bg-gray-900 transition-colors duration-300">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">Lo Que Dicen Nuestros Clientes</h2>
+      <p class="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+        La satisfacción de nuestros clientes es nuestra mejor recompensa. Conoce sus experiencias.
+      </p>
+    </div>
+    
+    <div class="testimonials-slider relative">
+      <div class="testimonials-container flex overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-8 -mx-4 px-4 space-x-6">
+        {testimonials.map(testimonial => (
+          <div class="testimonial-card snap-center flex-shrink-0 w-full md:w-1/2 lg:w-1/3 bg-pink-50 dark:bg-gray-800 p-6 rounded-xl shadow-md">
+            <div class="flex items-center mb-4">
+              <img 
+                src={testimonial.imagen} 
+                alt={testimonial.nombre} 
+                class="w-16 h-16 rounded-full object-cover mr-4"
+              />
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{testimonial.nombre}</h3>
+                <div class="flex text-yellow-400">
+                  {Array.from({ length: testimonial.rating }).map(() => (
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300 italic mb-4">"{testimonial.testimonio}"</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400">{new Date(testimonial.fecha).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+          </div>
+        ))}
+      </div>
+      
+      <button class="testimonial-prev absolute top-1/2 left-0 transform -translate-y-1/2 z-10 bg-white dark:bg-gray-800 p-2 rounded-full shadow-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700 dark:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      
+      <button class="testimonial-next absolute top-1/2 right-0 transform -translate-y-1/2 z-10 bg-white dark:bg-gray-800 p-2 rounded-full shadow-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700 dark:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<style>
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
+
+<script>
+  const container = document.querySelector('.testimonials-container');
+  const prevButton = document.querySelector('.testimonial-prev');
+  const nextButton = document.querySelector('.testimonial-next');
+  const cards = document.querySelectorAll('.testimonial-card');
+  
+  if (container && prevButton && nextButton) {
+    prevButton.addEventListener('click', () => {
+      container.scrollBy({ left: -container.offsetWidth / 2, behavior: 'smooth' });
+    });
+    
+    nextButton.addEventListener('click', () => {
+      container.scrollBy({ left: container.offsetWidth / 2, behavior: 'smooth' });
+    });
+  }
+</script>
