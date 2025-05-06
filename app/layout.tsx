@@ -28,11 +28,7 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning>
       <body className={`${inter.variable} ${playfair.variable} font-sans`}>
-        <ThemeProvider
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider >
           <Navbar />
           <main>{children}</main>
           <Footer />
