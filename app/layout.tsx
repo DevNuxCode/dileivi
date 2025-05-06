@@ -29,7 +29,6 @@ export default function RootLayout({
     <html lang="es" suppressHydrationWarning>
       <body className={`${inter.variable} ${playfair.variable} font-sans`}>
         <ThemeProvider
-          storageKey="theme"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
