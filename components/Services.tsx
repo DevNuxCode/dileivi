@@ -7,6 +7,8 @@ import { Badge } from "@/components/ui/badge";
 import { Service } from "@/lib/types";
 import { Clock, DollarSign } from "lucide-react";
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 interface ServicesProps {
   services: Service[];
@@ -67,6 +69,14 @@ export function Services({ services }: ServicesProps) {
                       <Clock className="mr-1 h-4 w-4 text-muted-foreground" />
                       <span>{service.duration}</span>
                     </div>
+
+                    <Button asChild className="mt-2">
+                      <Link href="#agendar" onClick={() => (true)}>
+                        Reservar Hora
+                      </Link>
+                    </Button>
+
+
                   </div>
                 </CardContent>
               </Card>
