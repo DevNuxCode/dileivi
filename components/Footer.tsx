@@ -84,7 +84,7 @@ export function Footer() {
             <h3 className="font-medium text-lg mb-4">Síguenos</h3>
             <div className="flex space-x-4">
               <Link 
-                href="https://www.instagram.com" 
+                href="https://www.instagram.com/dibu.33.cl/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-accent/50 hover:bg-accent p-2 rounded-full transition-colors"
@@ -107,7 +107,7 @@ export function Footer() {
                 </svg>
               </Link>
               <Link 
-                href="https://www.tiktok.com" 
+                href="https://www.tiktok.com/@dilei.bello/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-accent/50 hover:bg-accent p-2 rounded-full transition-colors"
@@ -131,7 +131,7 @@ export function Footer() {
                 </svg>
               </Link>
               <Link 
-                href="https://www.youtube.com" 
+                href="https://www.youtube.com/channel/UCVlcSQetp1xvosu8hQjrSRg" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-accent/50 hover:bg-accent p-2 rounded-full transition-colors"
@@ -155,10 +155,10 @@ export function Footer() {
             </div>
             <div className="mt-6">
               <p className="text-sm text-muted-foreground">
-                <strong>Dirección:</strong> Av. Providencia 1234, Santiago
+                <strong>Dirección:</strong> Av. Jose Miguel Carrera 1234, San Miguel
               </p>
               <p className="text-sm text-muted-foreground">
-                <strong>Email:</strong> contacto@dileivibello.com
+                <strong>Email:</strong> dileivicbello@gmail.com
               </p>
               <p className="text-sm text-muted-foreground">
                 <strong>Teléfono:</strong> +56 9 2044 9036
