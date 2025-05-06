@@ -5,6 +5,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
+  telemetry: false,
 };
 
-export default nextConfig;
+module.exports = nextConfig;
