@@ -29,9 +29,9 @@ export default function RootLayout({
     <html lang="es" suppressHydrationWarning>
       <body className={`${inter.variable} ${playfair.variable} font-sans`}>
         <ThemeProvider
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
+            defaultTheme="system" 
+            enableSystem 
+            disableTransitionOnChange 
         >
           <Navbar />
           <main>{children}</main>
