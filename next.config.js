@@ -5,7 +5,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
-  telemetry: false,
+  
 };
 
 module.exports = nextConfig;
