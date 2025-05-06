@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Diseño Natural Elegante",
+    "image": "https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Manicure natural con detalles minimalistas"
+  },
+  {
+    "id": 2,
+    "name": "Gel Rosa con Pedrería",
+    "image": "https://images.pexels.com/photos/704815/pexels-photo-704815.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Uñas de gel con acabado brillante y detalles de cristales"
+  },
+  {
+    "id": 3,
+    "name": "Arte Geométrico",
+    "image": "https://images.pexels.com/photos/6621472/pexels-photo-6621472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Diseño de líneas geométricas en tonos neutros"
+  },
+  {
+    "id": 4,
+    "name": "Extensiones Stiletto",
+    "image": "https://images.pexels.com/photos/4210654/pexels-photo-4210654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Extensiones en forma stiletto con diseño degradado"
+  },
+  {
+    "id": 5,
+    "name": "Francés Moderno",
+    "image": "https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Manicure francesa con twist moderno en colores pasteles"
+  },
+  {
+    "id": 6,
+    "name": "Nail Art Floral",
+    "image": "https://images.pexels.com/photos/4210347/pexels-photo-4210347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Diseño floral detallado sobre base neutra"
+  },
+  {
+    "id": 7,
+    "name": "Efecto Mármol",
+    "image": "https://images.pexels.com/photos/939836/pexels-photo-939836.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Técnica de marmoleado con tonos azules y blancos"
+  },
+  {
+    "id": 8,
+    "name": "Acrílico con French",
+    "image": "https://images.pexels.com/photos/7790116/pexels-photo-7790116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Extensiones acrílicas con francés clásico"
+  }
+]

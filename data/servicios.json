@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Manicure Básica",
+    "description": "Limpieza, limado, cutículas y esmalte tradicional.",
+    "price": "$15.000",
+    "duration": "45 min",
+    "image": "https://images.pexels.com/photos/939836/pexels-photo-939836.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 2,
+    "name": "Manicure Gel",
+    "description": "Manicure completa con esmalte semipermanente de gel.",
+    "price": "$22.000",
+    "duration": "60 min",
+    "image": "https://images.pexels.com/photos/704815/pexels-photo-704815.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 3,
+    "name": "Extensiones de Uñas",
+    "description": "Aplicación de extensiones acrílicas o de gel con diseño a elección.",
+    "price": "$35.000",
+    "duration": "90 min",
+    "image": "https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 4,
+    "name": "Nail Art Premium",
+    "description": "Diseños exclusivos, pedrería, efectos 3D y técnicas avanzadas.",
+    "price": "$28.000",
+    "duration": "75 min",
+    "image": "https://images.pexels.com/photos/4210347/pexels-photo-4210347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 5,
+    "name": "Pedicure Spa",
+    "description": "Tratamiento completo para pies con exfoliación, masaje y esmalte.",
+    "price": "$25.000",
+    "duration": "60 min",
+    "image": "https://images.pexels.com/photos/3997377/pexels-photo-3997377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 6,
+    "name": "Manicure & Pedicure Combo",
+    "description": "Tratamiento completo para manos y pies con esmalte gel.",
+    "price": "$42.000",
+    "duration": "120 min",
+    "image": "https://images.pexels.com/photos/7790114/pexels-photo-7790114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  }
+]
