@@ -24,11 +24,11 @@ export function Hero() {
         <div className="max-w-3xl mx-auto space-y-6">
           <div className="flex justify-center mb-6">
             <Image
-              src="/logo.png"
+              src="/logog.png"
               alt="Dileivi Bello Studio Logo"
-              width={100}
-              height={100}
-              className="w-24 h-24 md:w-32 md:h-32"
+              width={500}
+              height={500}
+              className="w-34 h-34 md:w-32 md:h-32"
             />
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif text-white tracking-tight">
