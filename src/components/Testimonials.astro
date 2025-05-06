@@ -1,7 +1,6 @@
 ---
-// Fetch testimonials data
-const response = await fetch('http://localhost:4321/data/testimonios.json');
-const testimonials = await response.json();
+// Import testimonials data directly
+import testimonials from '../../public/data/testimonios.json';
 ---
 
 <section id="testimonios" class="section-padding bg-white dark:bg-gray-900 transition-colors duration-300">

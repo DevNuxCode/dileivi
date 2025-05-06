@@ -1,7 +1,6 @@
 ---
-// Fetch cliente data
-const response = await fetch('http://localhost:4321/data/clientes.json');
-const portfolioItems = await response.json();
+// Import client data directly
+import portfolioItems from '../../public/data/clientes.json';
 
 // Categories for filtering
 const categories = [...new Set(portfolioItems.map(item => item.categoria))];
