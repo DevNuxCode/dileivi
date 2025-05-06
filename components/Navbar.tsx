@@ -2,9 +2,10 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Scissors } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
@@ -47,7 +48,13 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link href="#home" className="flex items-center gap-2 text-primary">
-          <Scissors className="h-6 w-6" />
+          <Image
+            src="/logo100.png"
+            alt="Dileivi Bello Studio Logo"
+            width={40}
+            height={40}
+            className="w-10 h-10"
+          />
           <span className="font-serif text-xl font-bold tracking-tight">Dileivi Bello Studio</span>
         </Link>
 
