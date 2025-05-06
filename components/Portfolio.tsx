@@ -26,7 +26,7 @@ export function Portfolio({ trabajos }: PortfolioProps) {
     <section id="portafolio" className="py-16 px-4 md:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto space-y-8">
         <div className="text-center space-y-2">
-          <Badge variant="outline" className="mb-2">Nuestro Portafolio</Badge>
+          <Badge variant="outline" className="mb-2">Nuestro Trabajo</Badge>
           <h2 className="text-3xl md:text-4xl font-bold font-serif tracking-tight">Trabajos Destacados</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Explora nuestra galería de trabajos recientes y descubre el arte que podemos crear para ti.

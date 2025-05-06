@@ -24,7 +24,7 @@ export function Hero() {
         <div className="max-w-3xl mx-auto space-y-6">
           <div className="flex justify-center mb-6">
             <Image
-              src="/logo100.png"
+              src="/logo.png"
               alt="Dileivi Bello Studio Logo"
               width={100}
               height={100}

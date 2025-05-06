@@ -116,7 +116,7 @@ export function AppointmentForm() {
                 <div>
                   <h3 className="text-lg font-medium">Contacto Directo</h3>
                   <p className="text-muted-foreground">Teléfono: +56 9 2044 9036</p>
-                  <p className="text-muted-foreground">Email: contacto@dileivibello.com</p>
+                  <p className="text-muted-foreground">Email: dileivicbello@gmail.com</p>
                 </div>
               </div>
             </div>
